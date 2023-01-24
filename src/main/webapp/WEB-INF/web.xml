@@ -25,6 +25,15 @@
 	<servlet>
 		<servlet-name>context</servlet-name>
 		<servlet-class>com.sonia.web.MyServlet</servlet-class>
+		<init-param>
+			<param-name>name</param-name>
+			<param-value>Milan</param-value>
+		</init-param>
+		<init-param>
+			<param-name>phone</param-name>
+			<param-value>Apple</param-value>
+		</init-param>
+
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>context</servlet-name>
