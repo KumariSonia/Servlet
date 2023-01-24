@@ -12,4 +12,14 @@
 		<servlet-name>AddServlet</servlet-name>
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SquareServlet</servlet-name>
+		<servlet-class>com.sonia.web.SquareServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SquareServlet</servlet-name>
+		<url-pattern>/sq</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
