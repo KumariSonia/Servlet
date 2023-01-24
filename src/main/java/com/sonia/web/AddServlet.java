@@ -2,11 +2,11 @@ package com.sonia.web;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 public class AddServlet extends HttpServlet {
 
@@ -16,13 +16,10 @@ public class AddServlet extends HttpServlet {
 		int j = Integer.parseInt(req.getParameter("num1"));
 		int k = i + j;
 
-//		req.setAttribute("k", k);
-//
-//		RequestDispatcher rd = req.getRequestDispatcher("/sq");
-//		rd.forward(req, resp);
-		
-		resp.sendRedirect("sq?k="+k); //sending data using URL rewriting
-		
-		
+		HttpSession session = req.getSession();
+		session.setAttribute("k", k); // sending data using session
+
+		resp.sendRedirect("sq");
+
 	}
 }
