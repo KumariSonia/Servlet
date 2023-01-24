@@ -4,7 +4,7 @@
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>AddServlet</servlet-name>
 		<servlet-class>com.sonia.web.AddServlet</servlet-class>
 	</servlet>
@@ -48,6 +48,6 @@
 	<context-param>
 		<param-name>phone</param-name>
 		<param-value>Apple</param-value>
-	</context-param>
+	</context-param> -->
 
 </web-app>
