@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 public class SquareServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		int k = (Integer) req.getAttribute("k");
-		k= k*k;
+		int k = Integer.parseInt(req.getParameter("k"));
+		k = k * k;
 		PrintWriter out = resp.getWriter();
-		out.print("Hello to sq"+k);
+		out.print("Square of given number = " + k);
 	}
 }

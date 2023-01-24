@@ -16,9 +16,13 @@ public class AddServlet extends HttpServlet {
 		int j = Integer.parseInt(req.getParameter("num1"));
 		int k = i + j;
 
-		req.setAttribute("k", k);
-
-		RequestDispatcher rd = req.getRequestDispatcher("/sq");
-		rd.forward(req, resp);
+//		req.setAttribute("k", k);
+//
+//		RequestDispatcher rd = req.getRequestDispatcher("/sq");
+//		rd.forward(req, resp);
+		
+		resp.sendRedirect("sq?k="+k); //sending data using URL rewriting
+		
+		
 	}
 }
