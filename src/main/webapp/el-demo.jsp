@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>${name}
+<body>
+<%-- ${name} --%>
+${customers}
 </body>
 </html>
